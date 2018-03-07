@@ -1,0 +1,271 @@
+.container .wrapMenu{
+    width: inherit;
+    background-color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapMenu.fixed{
+        position: relative!important;
+    }
+}
+
+/*Contact Content*/
+.contactBar{
+    background-color: #083846;
+    width: 100%;
+    height: 10px;
+    display: block;
+}
+.contactContent{
+    font-family: "Playfair Display", "Times New Roman", serif;
+    background-color: #083846;
+    width: 100%;
+    text-align: center;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.contactContentTitle{
+    font-size: 28px;
+    color: #ffffff;
+    line-height: 36px;
+    top: 23px;
+    position: relative ;
+}
+
+.btnClose{
+    position: absolute;
+    top: 30px;
+    right: 145px;
+    height: 21px;
+    width: 21px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.btnClose:before, .btnClose:after{
+    position: absolute;
+    left: 11px;
+    content: "";
+    height: 21px;
+    width: 3px;
+    background-color: #201E2B;
+}
+
+.btnClose:before{
+    transform: rotate(45deg);
+}
+
+.btnClose:after{
+    transform: rotate(-45deg);
+}
+
+.contactContent .container{
+    margin-top:100px;
+    cursor: pointer;
+    display: block;
+}
+
+.contactContent .col-md-2{
+    margin-left: 150px;
+}
+
+
+@media screen and (max-width: 1200px){
+    .contactContent .col-md-2{
+        margin-left: 120px !important;
+    }
+}
+
+.contactChatQr{
+    position: absolute;
+    top: 0;
+    left: 36px;
+    width: 129px;
+    height: 129px;
+    background-image: url("../images/qrcode.jpg");
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    -o-transition: opacity .25s ease-in-out;
+    -ms-transition: opacity .25s ease-in-out;
+    display: none
+}
+
+.chat.col-md-2.on .contactChatQr{
+    display: block;
+    opacity: 1;
+}
+
+.chat.col-md-2 .contactQrCode{
+    position: relative;
+    margin: 15px auto 0 auto;
+    width: 80px;
+    height: 24px;
+    background:rgba(238,237,237,0.3) url("../images/qrcode.png") no-repeat center;
+    background-size: 16px 16px;
+    border-radius: 40px;
+    -webkit-transition: background-color .25s ease-in-out;
+    -moz-transition: background-color .25s ease-in-out;
+    -o-transition: background-color .25s ease-in-out;
+    -ms-transition: background-color .25s ease-in-out;
+    transition: background-color .25s ease-in-out
+}
+
+.chat.col-md-2.on .contactQrCode{
+    background-color: #ffffff;
+}
+
+.contactContent .container{
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.contactContent .container .contactTitle{
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.contactContent .container .contactSubTitle{
+    font-family: sans-serif;
+    color: #ffffff;
+    margin-top: 4px;
+    opacity: 0.3;
+}
+
+.chat.col-md-2 .contactIcon{
+    background-image: url("../images/wechat.png");
+}
+.email.col-md-2 .contactIcon{
+    background-image: url("../images/email.png");
+}
+.rss.col-md-2 .contactIcon{
+    background-image: url("../images/rss.png");
+}
+
+.col-md-2 .contactIcon{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    height: 113px;
+    width: 113px;
+    border-radius: 50%;
+    border: 5px solid rgba(0,0,0,0);
+}
+
+.col-md-2 > a:hover .contactIcon, .col-md-2 > div:hover.contactIcon{
+    background-color: #DEF7FC;
+}
+/* nav bar*/
+ul.navigation{
+    margin-top: 10px;
+    margin-left: 90px;
+}
+@media screen and (max-width: 1200px){
+    ul.navigation{
+        margin-left: -61px;
+    }
+}
+@media screen and (max-width: 992px){
+    ul.navigation{
+        margin-top: 0;
+        margin-left: 0;
+    }
+}
+
+ul.navigation li span{
+    display:block;
+    position:absolute;
+    width:0;
+    height:0;
+    background:#f6da6a;
+    top:40px;
+    left:50%;
+}
+
+h1{
+    color: #083846;
+}
+
+.navigation .btnContactUs{
+    background-color: #083846;
+    text-align: center;
+    width: 125px;
+}
+
+.navigation .btnContactUs a{
+    color: #ffffff;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+ul.navigation .btnContactUs:hover {
+    background-color: #000000;
+}
+
+ul.navigation .btnContactUs .btnText:after{
+    font-family: FontAwesome;
+    content: '\f0d7';
+    margin-left: 10px;
+    opacity: 0.8;
+}
+
+ul.navigation .btnContactUs .btnText{
+    display: block;
+}
+
+ul.navigation .btnContactUs .navClose{
+    display: none;
+}
+
+.navigation .btnContactUs.on {
+    background-color: #f6da6a;
+    width: 125px;
+}
+.navigation .btnContactUs.on a{
+    color: #083846;
+}
+
+.navigation .btnContactUs.on:hover{
+    background-color: #e4c95e;
+}
+
+.navigation .btnContactUs.on a.navClose:after{
+    font-family: FontAwesome;
+    content: '\f0d8';
+    margin-left: 48px;
+    opacity: 0.8;
+}
+
+.navigation .btnContactUs.on a.btnText{
+    display: none;
+}
+
+.navigation .btnContactUs.on a.navClose{
+    display: block;
+}
+.hero embed {
+    margin-left: 10px;
+}
+
+footer .container{
+    text-align: center;
+    margin-top: 146px;
+}
+
+footer .container p{
+    font-size: 6px;
+    margin-top: 27px;
+    line-height: 22px;
+    letter-spacing: 1px;
+
+}
+
+.fixed{
+    position: fixed;
+    top:0;
+}
+
