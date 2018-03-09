@@ -159,20 +159,9 @@
     background-color: #DEF7FC;
 }
 /* nav bar*/
+
 ul.navigation{
     margin-top: 10px;
-    margin-left: 90px;
-}
-@media screen and (max-width: 1200px){
-    ul.navigation{
-        margin-left: -61px;
-    }
-}
-@media screen and (max-width: 992px){
-    ul.navigation{
-        margin-top: 0;
-        margin-left: 0;
-    }
 }
 
 ul.navigation li span{
@@ -192,7 +181,7 @@ h1{
 .navigation .btnContactUs{
     background-color: #083846;
     text-align: center;
-    width: 125px;
+    width: 140px;
 }
 
 .navigation .btnContactUs a{
@@ -267,5 +256,12 @@ footer .container p{
 .fixed{
     position: fixed;
     top:0;
+}
+
+ul.filter-nav{
+    text-decoration: none;
+    padding: 0;
+    list-style: none;
+    display: none;
 }
 

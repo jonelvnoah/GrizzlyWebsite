@@ -3,7 +3,7 @@
   'use strict'; // Using strict mode
 
   // Vertical lines
-  // $('body').append('<div class="l1"></div><div class="l2"></div><div class="l3"></div>')
+  $('body').append('<div class="l1"></div><div class="l2"></div><div class="l3"></div>')
 
   // Page transitions
 
@@ -233,5 +233,8 @@ $(".chat.col-md-2").on("click",function () {
     $(this).toggleClass("on");
 });
 
+$("#filter").hover(function () {
+    $("ul.filter-nav").slideToggle();
+});
 
 })(jQuery);
